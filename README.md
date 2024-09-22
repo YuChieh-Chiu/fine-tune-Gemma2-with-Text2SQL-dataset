@@ -1,7 +1,7 @@
-# FINE-TUNE GEMMA2-2B WITH TEXT2SQL DATASET
+# FINE-TUNE CODEGEMMA-1.1-2B WITH TEXT2SQL DATASET
 
 ## Target
-> **Fine-tune Gemma2-2b to boost the capability of transforming User's query to a valid SQL script.**
+> **Fine-tune CodeGemma-1.1-2b to boost the capability of transforming User's query to a valid SQL script.**
 
 ## Result
 ### - Evaluate by Full SQL Script Comparison
@@ -18,23 +18,10 @@
 
 ## Project Overview
 > [!IMPORTANT]
-> In this project, I have developed a `Langchain Adaptive RAG` with the following components and rag flow：
-> - Vectorstore Data Source: **[2024 Q2 Financial Report of TSMC (2330) download from TWSE](https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2330&year=113&seamon=&mtype=A&)**
-> - Function Calling API: **[TWSE Open API](https://openapi.twse.com.tw)**
-> - Vectorstore: **Chroma DB**
-> - Embedding Model: **jina-embeddings-v2-base-zh**
-> - Large Language Model: **llama3.1 8b**
-> - Large Language Model Framework: **Ollama**
-> - Large Language Model Application Framework: **LangChain**
-> - Controllable Agentic Workflows Framework: **LangGraph**
-> - RAG Flow:
-> - <img width="400" src="./readme_source/adaptive_rag_workflow.png">
-
-> > This **Langchain Adaptive RAG** allows users to ask any questions related to `TSMC's 2024 Q2 financial report` or `the latest Taiwan stock market information` in Traditional Chinese. If users ask questions not related to `TSMC's 2024 Q2 financial report` or `the latest Taiwan stock market information`, this **Langchain Adaptive RAG** would refuse to answer question.
+> TODO
 
 ## Potential Areas for Future Optimization
-- [ ] Evaluate the effectiveness of Adaptive RAG: **RAGAs**
-- [ ] Add Reranker to compare retrieval performance with the current version
+- [ ] TODO
 
 ## References
 > The code in this project refers to some references mentioned below：
