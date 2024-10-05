@@ -1,20 +1,24 @@
-# FINE-TUNE CODEGEMMA-1.1-2B WITH TEXT2SQL DATASET
+# FINE-TUNE GEMMA-2-2B-it WITH TEXT2SQL DATASET
 
 ## Target
-> **Fine-tune CodeGemma-1.1-2b to boost the capability of transforming User's query to a valid SQL script.**
+> **Fine-tune Gemma-2-2b-it to boost the capability of transforming User's query to a valid SQL script.**
 
-## Result
-### - Evaluate by Full SQL Script Comparison
-| Model                  | Accuracy |
-| ---------------------- | -------- |
-| Gemma2-2b-it           | xx%      |
-| Fine-tuned Gemm2-2b-it | xx%      |
+## Test Records
+<details>
+  <summary>### Test Result v1</summary>
+  ### - Evaluate by Full SQL Script Comparison
+  | Model                   | Accuracy    |
+  | ----------------------- | ----------- |
+  | Gemma2-2b-it            | 3.33%       |
+  | Fine-tuned Gemma2-2b-it | 33.33%      |
+  
+  ### - Evaluate by SOTA LLM
+  | Model                   | Accuracy    |
+  | ----------------------- | ----------- |
+  | Gemma2-2b-it            | 23.33%      |
+  | Fine-tuned Gemma2-2b-it | 60.00%      |
+</details>
 
-### - Evaluate by GPT4o
-| Model                  | Accuracy |
-| ---------------------- | -------- |
-| Gemma2-2b-it           | xx%      |
-| Fine-tuned Gemm2-2b-it | xx%      |
 
 ## Project Overview
 > [!IMPORTANT]
