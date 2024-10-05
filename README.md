@@ -10,6 +10,7 @@
   
   ### Evaluate by Full SQL Script Comparison
   > Directly compare the string content of each `Model Answer` with the `Ground Truth Answer` to see if they are exactly the same.
+
   | Model                   | Accuracy        |
   | ----------------------- | --------------- |
   | Gemma2-2b-it            | 3.33%           |
@@ -17,6 +18,7 @@
   
   ### Evaluate by SOTA LLM
   > Let the SOTA LLM act as a judge, providing `SQL Context`, `Query`, `Ground Truth Answer`, and `Model Answer`. Ask the SOTA LLM to determine whether each Model Answer can achieve the same effect as the Ground Truth Answer in answering the Query.
+
   | Model                   | Accuracy        |
   | ----------------------- | --------------- |
   | Gemma2-2b-it            | 23.33%          |
@@ -27,16 +29,16 @@
 ## Project Overview
 > [!IMPORTANT]
 > **Overview:** <br>
-> This is a project using **QLoRA (Quantization + LoRA)** to fine-tune the Gemma-2-2b-it model, aiming to enhance its **Text-to-SQL** capabilities. <br>
+> This is a project using **QLoRA (Quantization + LoRA)** to fine-tune the Gemma-2-2b-it model, aiming to enhance its **Text-to-SQL** capabilities. <br><br>
 > **Objective:** <br>
-> The main goal of this project is to evaluate whether using the **PEFT (Parameters Efficiency Fine-Tuning)** method to adjust the model can significantly improve its performance in a specific domain. <br>
+> The main goal of this project is to evaluate whether using the **PEFT (Parameters Efficiency Fine-Tuning)** method to adjust the model can significantly improve its performance in a specific domain. <br><br>
 > **Results:** <br>
-> In preliminary testing, the fine-tuned model demonstrated significantly better performance in Text-to-SQL tasks compared to the base model. This was true whether the evaluation was done by exact string matching or by having a state-of-the-art (SOTA) large language model (LLM) act as a judge. _The accuracy of the fine-tuned model improved by over **30%** compared to the base model._ <br>
+> In preliminary testing, the fine-tuned model demonstrated significantly better performance in Text-to-SQL tasks compared to the base model. This was true whether the evaluation was done by exact string matching or by having a state-of-the-art (SOTA) large language model (LLM) act as a judge. _The accuracy of the fine-tuned model improved by over **30%** compared to the base model._ <br><br>
 > **Additional Information:** <br>
 > The following resources were used in this project: <br>
-  - Dataset: **gretelai/synthetic_text_to_sql**
-  - Base Model: **google/gemma-2-2b-it**
-  - Accelerator: **GPU T4x2**
+>  - Dataset: **gretelai/synthetic_text_to_sql**
+>  - Base Model: **google/gemma-2-2b-it**
+>  - Accelerator: **GPU T4x2**
 
 ## Potential Areas for Future Optimization
 - [ ] Try categorizing SQL question types, fine-tune the model on each type, and check if it leads to better performance.
